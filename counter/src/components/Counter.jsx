@@ -4,12 +4,14 @@ import {useState} from 'react';
 function Counter(){
 let [count, setCount]= useState(0);
 const add= () => setCount(count+1);
-console.log(count); //useState function is not run synchronously
+const minus = () => setCount(count-1);
 
 
 return(
 <>
-<button onClick={add}>Click Me!{count}</button>
+<h1>Counter: {count}</h1>
+<button onClick={add}>+</button>
+<button onClick={minus}>-</button>
 </>
     )
 
