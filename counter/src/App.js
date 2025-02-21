@@ -1,12 +1,9 @@
 import "./App.css";
-import Counter from "./components/Counter";
+import TextBox from "./components/TextBox";
 
 function App() {
-  return(<>
-  <Counter/>
-  
-  </>)
- 
+  return(
+  <TextBox />)
 }
 
 export default App;
